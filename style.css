@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background-color: black;
+  height: 125px;
+}
+
+header nav ul li {
+  width: 97%;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li a {
+  text-decoration: none;
+  position: relative;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+header nav ul li a::before {
+  content: attr(data-text);
+  position: absolute;
+  color: #fff;
+  width: 0%;
+  overflow: hidden;
+  border-right: 5px solid #fff;
+}
+
+header nav ul li a:hover::before {
+  width: 100%;
+  transition: 1s;
+  -webkit-text-stroke: 1px #fff;
+}
+
+main .banner {
+  background-image: url(https://static.wixstatic.com/media/2b08c7_232828b630964653a6229c8685ce5111f000.jpg/v1/fill/w_1346,h_530,al_c,q_85,usm_0.33_1.00_0.00/2b08c7_232828b630964653a6229c8685ce5111f000.webp);
+  background-attachment: fixed;
+  margin-top: 2px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+main .banner p {
+  width: 90%;
+  color: white;
+  font-style: italic;
+  font-family: " EB Garamond", serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+main .banner #ralph {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 40px;
+}
+
+main .banner span {
+  color: white;
+  font-style: italic;
+  font-family: " EB Garamond", serif;
+}
+
+main .poto {
+  background-image: url(http://www.pixelstalk.net/wp-content/uploads/2016/05/Black-Wallpapers-Image-Free-Download.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 40px;
+  height: 600px;
+  margin-top: 3px;
+}
+
+main .poto span {
+  text-decoration: underline 3px red;
+}
+
+main .poto1 span {
+  text-decoration: underline 3px red;
+}
+
+main span {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 2.4rem;
+}
+
+main p {
+  width: 90%;
+  color: white;
+  font-family: " EB Garamond", serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li a:hover {
+  color: red;
+}
+
+main form {
+  width: 50%;
+  margin: 40px auto;
+}
+
+main form .form-select {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+div .form-text {
+  color: black;
+}
+
+main .saerto div {
+  background-image: url(https://www.wallpapertip.com/wmimgs/3-36136_dslr-background-hd-blur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 650px;
+}
+
+main .saerto ul li {
+  list-style-type: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .saerto p {
+  width: 90%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-left: 100px;
+}
+
+main .saerto ul li a {
+  color: white;
+  font-size: 18px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: chocolate;
+}
+
+main .saerto button {
+  border-radius: 30px;
+  background-color: #ffc439;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 917px;
+  font-size: 20px;
+}
+
+header nav ul li a.active {
+  background: #ffc439;
+  border-radius: 20px;
+}
+
+main .middle {
+  background-image: url("https://tse2.mm.bing.net/th?id=OIP.pao4hJjd80ShEL6KanWrCAHaDM&pid=Api&P=0&w=464&h=200");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .middle div {
+  background-image: url("https://static.wixstatic.com/media/2b08c7_2bf23e6511d64e79be1da155ad4caf24~mv2.jpg/v1/fill/w_404,h_600,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2b08c7_2bf23e6511d64e79be1da155ad4caf24~mv2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 70px;
+}
+
+main .middle div button {
+  border-radius: 20px;
+  background-color: red;
+  font-style: italic;
+  font-family: fantasy;
+  font-size: 2rem;
+  color: brown;
+}
+
+main .middle div button:hover {
+  background-color: white;
+}
+
+.profile-card *,
+.profile-card *:before,
+.profile-card *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.profile-card {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: 200px;
+  margin: 20px auto;
+  width: 320px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.profile-card header {
+  background: #ff7043;
+  padding: 1px;
+  height: 8px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.profile-card header img {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  display: block;
+  margin: 10px auto;
+  width: 120px;
+}
+
+.profile-card header h1 {
+  color: #ff7043;
+  font-family: "Open Sans";
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.profile-card header h2 {
+  color: #ff7043;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin: 0 0 5px;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.profile-card .profile-bio {
+  padding: 20px;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: all 0.3s 0.25s;
+  -moz-transition: all 0.3s 0.25s;
+  -o-transition: all 0.3s 0.25s;
+  transition: all 0.3s 0.25s;
+}
+
+.profile-card .profile-bio p {
+  color: #999;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  font-family: "Open Sans";
+}
+
+.profile-card .profile-social-links {
+  display: block;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 160px;
+}
+
+.profile-card .profile-social-links li {
+  display: block;
+  float: left;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: all 0.3s cubic-bezier(0, 1.135, 0.73, 1.405) 0.25s;
+  -moz-transition: all 0.3s cubic-bezier(0, 1.135, 0.73, 1.405) 0.25s;
+  -ms-transition: all 0.3s cubic-bezier(0, 1.135, 0.73, 1.405) 0.25s;
+  transition: all 0.3s cubic-bezier(0, 1.135, 0.73, 1.405) 0.25s;
+}
+
+.profile-card .profile-social-links li:nth-child(2) {
+  -webkit-transition-delay: 0.35s;
+  -moz-transition-delay: 0.35s;
+  -o-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+
+.profile-card .profile-social-links li:nth-child(3) {
+  -webkit-transition-delay: 0.45s;
+  -moz-transition-delay: 0.45s;
+  -o-transition-delay: 0.45s;
+  transition-delay: 0.45s;
+}
+
+.profile-card .profile-social-links li a {
+  background: rgba(255, 112, 67, 0.2);
+  border-radius: 50%;
+  display: block;
+  float: left;
+  height: 40px;
+  margin: 0 5px;
+  outline: 0 none;
+  width: 40px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.profile-card .profile-social-links li a:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.profile-card .profile-social-links li a img {
+  padding: 5px;
+  width: 40px;
+}
+
+/*  CHANGES  ON HOVER  */
+
+.profile-card:hover {
+  height: 420px;
+}
+.profile-card:hover header {
+  height: 200px;
+}
+
+.profile-card:hover header h1,
+.profile-card:hover header h2 {
+  color: #fff;
+}
+
+.profile-card:hover .profile-bio {
+  opacity: 1;
+}
+
+.profile-card:hover .profile-social-links li {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+main .bg {
+  background-image: url(https://wallpapersmug.com/download/1024x768/8e3c70/sunset-mist-desert-horizon.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 900px;
+  padding-top: 200px;
+}
